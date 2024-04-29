@@ -298,7 +298,9 @@ nav a{
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   position: relative;
+}
+.carousel-indicators{
+   bottom:-50px ;
 }
 /* ((((((((((((((((((((((((((((((((( [ blog] ))))))))))))))))))))))))))))))))) */
 .blog-h6 h6{
