@@ -1,0 +1,422 @@
+*{
+   box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+/* ((((((((((((((((((((((((((((((((( [ navbar ] ))))))))))))))))))))))))))))))))) */
+.to-top {
+    text-decoration: none;
+    position: fixed;
+    left: 95%;
+    bottom: 15px;
+    z-index: 99;
+    background: #0078ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+} 
+.to-top i {
+    font-size: 15px;
+    color: #fff;
+    line-height: 0;
+} 
+.to-top:hover {
+    background: #298eff;
+    color: #fff;
+}
+.logo{
+   font-family: "Roboto", sans-serif;
+   font-weight: 700;
+   font-size: 28px;
+   letter-spacing: 1px;
+}
+nav a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.collapse .nav-item a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.navbar a i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+.collapse .nav-item a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 500ms;
+}
+.collapse ul li a:hover::after {
+    width: 100%;
+    transition: width 500ms;
+}
+/* ((((((((((((((((((((((((((((((((( [ home ] ))))))))))))))))))))))))))))))))) */
+.home{
+    position: relative;
+    z-index: 999;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/hero-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.home h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+.home p::after{
+    content: "";
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    animation: typing 5s infinite;
+}
+@keyframes typing {
+    0%{
+       content: "De|";
+    }
+    10%{
+        content: "Desi|";
+     }
+     15%{
+        content: "Design|";
+     }
+     20%{
+        content: "Desi|";
+     }
+     25%{
+        content: "De|";
+     }
+     30%{
+        content: "|";
+     }
+     35%{
+         content: "De|";
+      }
+      40%{
+         content: "Deve|";
+      }
+      45%{
+         content: "Develo|";
+      }
+      50%{
+         content: "Developer|";
+      }
+      55%{
+        content: "De|";
+     }
+     60%{
+        content: "|";
+     }
+     65%{
+         content: "De|";
+      }
+      75%{
+         content: "Deve|";
+      }
+      80%{
+         content: "Develo|";
+      }
+      85%{
+         content: "Developer|";
+      }
+      90%{
+        content: "Deve|";
+     }
+     95%{
+        content: "Develo|";
+     }
+     100%{
+        content: "Developer|";
+     }
+}
+/* ((((((((((((((((((((((((((((((((( [ about ] ))))))))))))))))))))))))))))))))) */
+.image-ab{
+    width: 150px;
+}
+.profile{
+   color: #1E1E1E;
+   width: 17.6px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 600;
+}
+.profile1{
+   color: #4E4E4E;
+   width: 16px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+.line-h5{
+   color: #1E1E1E;
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+   position: relative;
+}
+.line-h5 h5::after{
+   content: "";
+   position: absolute;
+   height: 3px;
+   background-color: #0078ff;
+   width: 120px;
+   bottom: -11px;
+   left: 0px;
+
+}
+.about-me{
+   color: #4E4E4E;
+   width: 20px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 300;
+}
+/* ((((((((((((((((((((((((((((((((( [ service ] ))))))))))))))))))))))))))))))))) */
+.services p::after{
+   content: "";
+   position: absolute;
+   height: 5px;
+   background-color: #0078ff;
+   width: 70px;
+   bottom: -15px;
+   left: 41%;
+}
+.service-hover:hover .ico-circle {
+   transition: all 500ms ;
+   color: #fff;
+   background-color: #0078ff;
+   box-shadow: 0 0 0 10px #cde1f8;
+}
+.service-hover .service-ico {
+   width: 100px;
+   height: 100px;
+   border: solid #0078ff 5px;
+   border-radius: 50%;
+   margin-bottom: 1rem;
+   font-size: 25px;
+   color: #1e1e1e;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-position: center center;
+}
+.service-hover .ico-circle {
+   transition: all 500ms ;
+}
+.service1{
+   font-size: 16px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+.service2{
+   font-size: 48px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 700;
+}
+/* ((((((((((((((((((((((((((((((((( [ After-Service ] ))))))))))))))))))))))))))))))))) */
+.backg{
+   background-image: linear-gradient(to right, rgba(49,111,240,0.7), rgba(49,111,240,0.7)),url(../images/counters-bg.jpg) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.icons-after{
+   width: 50px;
+   height: 50px;
+   border: solid  0px;
+   border-radius: 50%;
+   margin-bottom: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   box-shadow: 0 0 0 10px #cde1f8;
+}
+.letter p{
+   font-size: 32px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+.letter span{
+   font-size: 16px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+/* ((((((((((((((((((((((((((((((((( [ work ] ))))))))))))))))))))))))))))))))) */
+.work p::after{
+   content: "";
+   position: absolute;
+   height: 5px;
+   background-color: #0078ff;
+   width: 70px;
+   bottom: -15px;
+   left: 46%;
+}
+.work-image1{
+   overflow: hidden;
+}
+.work-image1 img{
+   transition: all 1000ms;
+}
+.work-image:hover .work-image1 img{
+   transform: scale(1.3);
+   transition: all 1000ms;
+}
+.letter-work h2{
+   font-size: 19px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+}
+.letter-work span{
+   font-size: 13px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+.work2{
+   width: 50px;
+   height: 50px;
+   border: solid #0078ff 4px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* ((((((((((((((((((((((((((((((((( [ After-Work ] ))))))))))))))))))))))))))))))))) */
+.backg2{
+   background-image: linear-gradient(to right, rgba(49,111,240,0.7), rgba(49,111,240,0.7)),url(../images/overlay-bg.jpg) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+}
+/* ((((((((((((((((((((((((((((((((( [ blog] ))))))))))))))))))))))))))))))))) */
+.blog-h6 h6{
+   font-size: 10px;
+   padding: 6px;
+}
+.bg-card{
+   background-color: #f5f5f5;
+}
+.bg-card img{
+   width: 35px;
+}
+.bolg-hover h3{
+   font-size: 21px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+}
+.bolg-hover p{
+   color: #4E4E4E;
+   font-size: 16px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+.bolg-hover a{
+   transition: all 500ms;
+   text-decoration: none;
+   color: inherit;
+}
+.bolg-hover a:hover{
+   color: #0078ff;
+   transition: all 500ms;
+}
+.bolg1-hover h3{
+   font-size: 21px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+}
+.bolg1-hover p{
+   color: #4E4E4E;
+   font-size: 16px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+}
+.bolg1-hover span a{
+   transition: all 500ms;
+   text-decoration: none;
+   color: inherit;
+}
+.bolg1-hover span a:hover{
+   color: #0078ff;
+   transition: all 500ms;
+}
+.blog1-h6 h6{
+   font-size: 10px;
+   padding: 5px 5px;
+   white-space: nowrap;
+}
+/* ((((((((((((((((((((((((((((((((( [ Contact ] ))))))))))))))))))))))))))))))))) */
+.backg3{
+   background-image: linear-gradient(to right, rgba(49,111,240,0.7), rgba(49,111,240,0.7)),url(../images/overlay-bg.jpg) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.contact h3::after{
+   content: "";
+   position: absolute;
+   height: 2px;
+   background-color: #0078ff;
+   width: 225px;
+   bottom: -5px;
+   left: 7%;
+}
+.contact2 h3::after{
+   content: "";
+   position: absolute;
+   height: 2px;
+   background-color: #0078ff;
+   width: 160px;
+   bottom: -5px;
+   left: 2%;
+}
+.b-hover{
+   transition: all 500ms ;
+}
+.b-hover:hover{
+   transition: all 500ms ;
+   color: #fff;
+   background-color: #0078ff;
+   box-shadow: 0 0 0 10px #cde1f8;
+}
+.list-contact{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.hove-c{
+   width: 40px;
+   height: 40px;
+
+   border: solid #0078ff 2px;
+   border-radius: 50%;
+   margin-bottom: 1rem;
+   font-size: 19px;
+   color: #1e1e1e;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-position: center center;
+   transition: all 500ms ;
+}
+.hove-c:hover{
+   transition: all 500ms ;
+   color: #fff;
+   background-color: #0078ff;
+   box-shadow: 0 0 0 10px #cde1f8;
+}
+.footer a{
+   text-decoration: none;
+   color: inherit;
+}
